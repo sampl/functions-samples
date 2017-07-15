@@ -24,7 +24,7 @@ admin.initializeApp(functions.config().firebase);
 const algoliasearch = require('algoliasearch');
 const client = algoliasearch(functions.config().algolia.app_id, functions.config().algolia.api_key);
 
-// Name fo the algolia index for Blog posts content.
+// Name of the algolia index for Blog posts content.
 const ALGOLIA_POSTS_INDEX_NAME = 'blogposts';
 
 // Updates the search index when new blog entries are created or updated.
